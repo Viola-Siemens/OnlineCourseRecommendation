@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Home%20Page.css">
+    <title>登录</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
+</head>
+<body>
+
+<div class="background">
+    <video autoplay loop muted>
+        <source src="video.mp4" type="video/mp4"  />
+        Your Browser is no longer supported.
+    </video>
+</div>
+
+<div class="login">
+    <div class="logo_1"></div>
+    <form class="form-item" action="http://127.0.0.1:5000/login" method="POST">
+        <p style="padding-bottom:30px"><input id="username" type="text" autocomplete="off" placeholder="手机号" name="phone"></p>
+        <p style="padding-bottom:30px"><input id="password" type="password" autocomplete="off" placeholder="登录密码" name="passwd"></p>
+        <p><input type="submit" value="登录" style="padding-left:0;margin-left:0;width:350px;background-color:white;color:#1f6f4a;cursor:pointer" onclick="a()"></p>
+    </form>
+    <div class="reg-bar" style="text-align: center;">
+        <a style="text-align: center;"  href="注册.html">立即注册</a>
+    </div>
+</div>
+
+</body>
+</html>

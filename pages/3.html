@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Course Recommender</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Bilbo|Patrick+Hand+SC|Poiret+One|Sacramento" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+	<link rel="stylesheet" type="text/css" href="maincss.css">
+
+
+
+  <style>
+  ul.pagination {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+  }
+
+  ul.pagination li {display: inline;}
+
+  ul.pagination li a {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+  }
+
+  ul.pagination li a.active {
+      background-color: #4CAF50;
+      color: white;
+  }
+
+  ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+  </style>
+
+	</head>
+	<body>
+
+
+
+
+		<body data-spy="scroll" data-target="#selected" data-offset="150" style="background-color:#87CEEB">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top header headerfont " id="navv">
+			  <a class="navbar-brand mx-0 my-0" href="#"><img id="image" src="../librarium.png"><span class="sr-only">(current)</span></a>
+
+							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+
+				<ul class="navbar-nav mr-auto">
+				  <li class="nav-item">
+					<a class="nav-link active ml-0" id="selected" href="../index.html">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="https://viola-siemens.github.io/">About</a>
+				  </li>
+
+				</ul>
+
+			  </div>
+			</nav>
+
+
+				  <div id="home" class="jumbotron bg-cover">
+          <br>
+				  <h1 class="display-3 text-center mar front">ECNU超星课程评价网</h1>
+				  <div class="text-center jumbostuff font-weight-bold" style="font-size:50px">Here are the urls for our courses. Check to and see the details.</div>
+				  </div>
+
+
+			<div style="font-size:30px">
+
+				<!-- <h3 class="jumbostuff font-weight-bold"><center>We collect feedback from ECNU chaoxing website to help students select courses.</center></h3>
+			<h3 class="jumbostuff font-weight-bold"><center>It allows you to choose from the best possible courses.</center></h4>
+			<h3 class="jumbostuff font-weight-bold"><center>So say Bye to confusion and say Hi to learning!</center></h4> -->
+
+<br><br>
+
+<div style="text-align:center;">
+	<p>11.论知识管理学的构建 <br>
+	<a href="http://ecnu.fanya.chaoxing.com/portal/courseweb/146627.html"></a>
+	<img  border="10" src="image/11.jpg" alt="论知识管理学的构建" width="320" height="320"></a></p>
+	<br>
+	</div>
+	
+	<div style="text-align:center;">
+	<p>12.用相声演绎中国文化<br>
+	<a href="http://ecnu.fanya.chaoxing.com/portal/courseweb/146623.html">
+	<img  border="10" src="image/12.jpg" alt="用相声演绎中国文化" width="320" height="320"></a></p>
+	<br>
+	</div>
+	
+	<div style="text-align:center;">
+	<p>13.旅游心理学<br>
+	<a href="http://ecnu.fanya.chaoxing.com/portal/courseweb/146637.html">
+	<img  border="10" src="image/13.jpg" alt="旅游心理学" width="320" height="320"></a></p>
+	<br>
+	</div>
+	
+	<div style="text-align:center;">
+	<p>14.大学生成功学<br>
+	<a href="http://ecnu.fanya.chaoxing.com/portal/courseweb/146636.html">
+	<img  border="10" src="image/14.jpg" alt="大学生成功学" width="320" height="320"></a></p>
+	<br>
+	</div>
+	
+	<div style="text-align:center;">
+	<p>15.我的青春，我的大学<br>
+	<a href="http://ecnu.fanya.chaoxing.com/portal/courseweb/203225.html">
+	<img  border="10" src="image/15.jpg" alt="我的青春，我的大学" width="320" height="320"></a></p>
+	<br>
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<div style="text-align:center;">
+<ul class="pagination" >
+  <li><a href="1.html">«</a></li>
+  <li><a href="1.html">1</a></li>
+  <li><a href="2.html">2</a></li>
+  <li><a href="3.html">3</a></li>
+  <li><a href="4.html">4</a></li>
+  <li><a href="4.html">»</a></li>
+</ul>
+</div>
+			<!-- <div style="font-size:100px" id="coursesavailable">
+
+			<h1 class="jumbostuff font-weight-bold" ><center>Thank you for your submit</center></h1>
+
+			</div> -->
+  <br><br>
+
+	<div class="jumbotron h-75 mb-0" style="background-color:#336699;">
+	<div style="font-size:60px" class="mt-0">
+<h2 class="front" style="color:#F0F8FF"><center>By 设计思维小组：时间管理大师养成组 </center></h3>
+</div>
+
+	</div>
+	</body>
+</html>
