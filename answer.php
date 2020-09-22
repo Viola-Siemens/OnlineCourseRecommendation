@@ -30,9 +30,6 @@
 		$urls[$elems[2]] = $elems[1];
 	}
 	
-	print_r($ranks);
-	print_r($urls);
-	
 	foreach($simi as $nm => $sc) {
 		echo '<div style="text-align:center;"><p>' . $nm . '<br><a href="' . $urls[$nm] . '"><img  border="10" src="pages/image/' . $ranks[$nm] . '.jpg" alt="' . $nm . '" width="320" height="320"></a></p><br></div>';
 	}
